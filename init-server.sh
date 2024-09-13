@@ -36,7 +36,7 @@ function main() {
   cd /satisfactory
 
   # Start server
-  FEXBash "./FactoryServer.sh $EXTRA_PARAMS"
+  sh ./FactoryServer.sh $EXTRA_PARAMS
 }
 
 main
