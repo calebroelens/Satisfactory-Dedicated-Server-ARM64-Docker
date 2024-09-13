@@ -25,6 +25,7 @@ RUN     apt update && apt -y install software-properties-common wget curl fuse s
         && apt -y install fex-emu-binfmt32 fex-emu-binfmt64
 
 # compiling FEX
+RUN apt-get install -y apt-transport-https
 RUN	apt update \
         && apt -y install curl git iproute2 libssl-dev squashfuse fuse squashfs-tools tzdata tar wget zip build-essential unzip gdb gettext screen numactl libc6 libstdc++6 \
 	&& wget http://launchpadlibrarian.net/668077130/libssl1.1_1.1.1f-1ubuntu2.19_arm64.deb \
